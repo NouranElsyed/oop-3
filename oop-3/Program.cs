@@ -23,7 +23,7 @@ namespace oop_3
         //{ return x + y; }
         #endregion
 
-        public static void processEmployee(FullTimeEmployee employee) {
+        public static void processEmployee(employee employee) {
             if (employee is not null) {
 
                 employee.getEmployeeType();
@@ -31,6 +31,16 @@ namespace oop_3
             }
         
         }
+        //public static void processEmployee(PartTimeEmployee employee)
+        //{
+        //    if (employee is not null)
+        //    {
+
+        //        employee.getEmployeeType();
+        //        employee.getEmployeeData();
+        //    }
+
+        //}
         static void Main(string[] args)
         {
 
@@ -96,6 +106,23 @@ namespace oop_3
             //FullTimeEmployee FullTimeEmployee = new FullTimeEmployee(5, "Nouran", 28 , 6000);
             //processEmployee(FullTimeEmployee);
 
+            PartTimeEmployee partTimeEmployee = new PartTimeEmployee()
+            {
+                Id = 10,
+                Name = "Nour",
+                Age = 30,
+                CountOfHours = 20,
+                HourRate = 2.5M
+
+            }
+                ;
+            //partTimeEmployee.Id = 10;
+            //partTimeEmployee.Name= "Nour";
+            //partTimeEmployee.Age = 30;
+            //partTimeEmployee.CountOfHours = 20;
+            //partTimeEmployee.HourRate = 2.5M;
+
+            processEmployee(partTimeEmployee);
             #endregion
         }
     }

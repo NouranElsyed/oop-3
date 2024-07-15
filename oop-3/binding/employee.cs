@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace oop_3.binding
 {
-    internal class employee
+    public class employee
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -18,7 +18,7 @@ namespace oop_3.binding
             Name = name;
                 Age = age;
         }   
-
+        public employee() { }   
         public void getEmployeeType() {
             Console.WriteLine("I am Employee");
         }
