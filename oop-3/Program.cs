@@ -1,4 +1,8 @@
-﻿namespace oop_3
+﻿using oop_3.polymorphism;
+
+
+
+namespace oop_3
 {
     internal class Program
     {
@@ -33,7 +37,18 @@
             //Console.WriteLine($"Result02 = {Result02}");//4.8
             //Console.WriteLine();
             #endregion
-            #region
+            #region [override]
+            typeA typeA = new typeA(1);
+                typeA.A = 10;
+            typeB typeB = new typeB(1,2);
+            typeB.A = 10;
+            typeB.B = 20;
+            typeB.MyFun01();
+            typeB.MyFun02();
+
+
+
+
             #endregion
             #region
             #endregion
