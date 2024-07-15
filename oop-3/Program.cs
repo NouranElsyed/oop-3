@@ -106,15 +106,15 @@ namespace oop_3
             //FullTimeEmployee FullTimeEmployee = new FullTimeEmployee(5, "Nouran", 28 , 6000);
             //processEmployee(FullTimeEmployee);
 
-            PartTimeEmployee partTimeEmployee = new PartTimeEmployee()
-            {
-                Id = 10,
-                Name = "Nour",
-                Age = 30,
-                CountOfHours = 20,
-                HourRate = 2.5M
+            //PartTimeEmployee partTimeEmployee = new PartTimeEmployee()
+            //{
+            //    Id = 10,
+            //    Name = "Nour",
+            //    Age = 30,
+            //    CountOfHours = 20,
+            //    HourRate = 2.5M
 
-            }
+            //}
                 ;
             //partTimeEmployee.Id = 10;
             //partTimeEmployee.Name= "Nour";
@@ -122,7 +122,33 @@ namespace oop_3
             //partTimeEmployee.CountOfHours = 20;
             //partTimeEmployee.HourRate = 2.5M;
 
-            processEmployee(partTimeEmployee);
+            //processEmployee(partTimeEmployee);
+            #endregion
+            #region Ex02
+            //typeC typeA = new typeC(1,2,3);
+            //typeA.A = 10;
+
+            //typeA.MyFun01();
+            //typeA.MyFun02();
+
+            //typeB typeB = new typeC(1, 2, 3);
+            //typeB.A = 10;
+            //typeB.B = 20;   
+
+            //typeB.MyFun01();
+            //typeB.MyFun02();
+
+            //typeA  typeA = new typeE (1,2,3,4,5);
+            //typeB typeB = new typeE(1, 2, 3, 4, 5);
+            //typeC typeC = new typeE(1, 2, 3, 4, 5);
+
+            //typeA.MyFun02();
+            //typeB.MyFun02();
+            //typeC.MyFun02();
+
+            typeD typeD =  new typeE(1,2,3,4,5);
+            typeD.MyFun02();
+
             #endregion
         }
     }
