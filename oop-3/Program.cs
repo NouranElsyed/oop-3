@@ -1,4 +1,5 @@
-﻿using oop_3.polymorphism;
+﻿using oop_3.binding;
+using oop_3.polymorphism;
 
 
 
@@ -9,7 +10,7 @@ namespace oop_3
         #region overloading
         //public static int sum(int x, int y)
         //{ return x + y; }
-      
+
         //public static int sum(int x, int y, int z)
         //{ return x + y + z; }
 
@@ -21,6 +22,15 @@ namespace oop_3
         //public static double sum(double x, int y)
         //{ return x + y; }
         #endregion
+
+        public static void processEmployee(FullTimeEmployee employee) {
+            if (employee is not null) {
+
+                employee.getEmployeeType();
+                employee.getEmployeeData();
+            }
+        
+        }
         static void Main(string[] args)
         {
 
@@ -65,8 +75,8 @@ namespace oop_3
             #region Not Binding
             //typeB childref = new typeA();   invalid
             //typeB childref = (typeB) new typeA(1); // not binding /explicit casting / unsafe casting
-           
-            
+
+
             //typeA typeA = new typeA(1);
             //typeB  typeB = (typeB) typeA;
 
@@ -74,14 +84,18 @@ namespace oop_3
             //Console.WriteLine(typeB.B);
 
 
-            typeA typeA = new typeB(1,2);
-            typeB typeB = (typeB)typeA;
+            //typeA typeA = new typeB(1,2);
+            //typeB typeB = (typeB)typeA;
 
-            Console.WriteLine(typeB.A);
-            Console.WriteLine(typeB.B);
+            //Console.WriteLine(typeB.A);
+            //Console.WriteLine(typeB.B);
 
             #endregion
-            #region
+            #region Ex01
+
+            //FullTimeEmployee FullTimeEmployee = new FullTimeEmployee(5, "Nouran", 28 , 6000);
+            //processEmployee(FullTimeEmployee);
+
             #endregion
         }
     }
